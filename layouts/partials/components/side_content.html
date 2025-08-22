@@ -11,5 +11,4 @@ site.Data.rtwt.content.side $section -}} {{- range $data -}}
   width="{{- default "80%" .imageWidth -}}" /> {{- end -}} {{- end -}}
   <p>{{- markdownify .content -}}</p>
 </div>
-<div>{{ partial "giscus.html" . }}</div>
 {{- end -}} {{- end }}
