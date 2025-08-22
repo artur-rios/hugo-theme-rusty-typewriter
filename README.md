@@ -25,23 +25,27 @@ A minimalist and elegant Hugo theme styled towards a warm color pallete. Perfect
 ## Quick Start
 
 1. Create a new Hugo site:
+
 ```bash
 hugo new site my-blog
 cd my-blog
 ```
 
 2. Add the theme as a git submodule:
+
 ```bash
 git init
 git submodule add https://github.com/math-queiroz/rusty-typewriter.git themes/rusty-typewriter
 ```
 
 3. Add the theme to your `hugo.toml`:
+
 ```toml
 theme = 'rusty-typewriter'
 ```
 
 4. Start the development server:
+
 ```bash
 hugo server
 ```
@@ -102,7 +106,7 @@ You can customize the theme's appearance by creating a custom CSS file:
 3. The theme will automatically include your custom CSS
 4. You may take a look at `_root.css` for existing theme values and variables
 
-> If a css file starts with an undescore (_), it will be bundled with the theme default ones, which may affect caching behavior!
+> If a css file starts with an undescore (\_), it will be bundled with the theme default ones, which may affect caching behavior!
 
 ### Layout Customization
 

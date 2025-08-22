@@ -39,6 +39,8 @@ title = 'My New Hugo Site'
  tag = 'tags'
 
 [params]
+ enableComments=true
+ giscusTheme="preferred_color_scheme"
  summaryLength = 1
 
 [params.links]
