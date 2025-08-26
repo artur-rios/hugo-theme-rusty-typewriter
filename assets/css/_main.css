@@ -188,16 +188,22 @@ pre:has(code) {
     background-color: var(--code-background-color) !important;
 }
 
-.profile-img-dark {
-    display: inline;
-}
-
 @media (prefers-color-scheme: dark) {
+    .profile-img-dark {
+        display: none;
+    }
+
     .profile-img-light {
         display: inline;
     }
+}
 
+@media (prefers-color-scheme: light) {
     .profile-img-dark {
-        display: none;
+        display: inline;
+    }
+
+    .profile-img-none {
+        display: inline;
     }
 }
