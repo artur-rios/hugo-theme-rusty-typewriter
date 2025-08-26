@@ -189,15 +189,15 @@ pre:has(code) {
 }
 
 .profile-img-dark {
-    display: none;
+    display: inline;
 }
 
 @media (prefers-color-scheme: dark) {
     .profile-img-light {
-        display: none;
+        display: inline;
     }
 
     .profile-img-dark {
-        display: inline;
+        display: none;
     }
 }
