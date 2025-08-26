@@ -188,22 +188,18 @@ pre:has(code) {
     background-color: var(--code-background-color) !important;
 }
 
-@media (prefers-color-scheme: dark) {
-    .profile-img-dark {
-        display: none;
-    }
-
-    .profile-img-light {
-        display: inline;
-    }
+html[color-scheme='dark'] .profile-img-dark {
+    display: none;
 }
 
-@media (prefers-color-scheme: light) {
-    .profile-img-dark {
-        display: inline;
-    }
+html[color-scheme='dark'] .profile-img-light {
+    display: inline;
+}
 
-    .profile-img-light {
-        display: none;
-    }
+html[color-scheme='light'] .profile-img-dark {
+    display: inline;
+}
+
+html[color-scheme='light'] .profile-img-light {
+    display: none;
 }
