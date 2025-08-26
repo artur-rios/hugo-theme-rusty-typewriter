@@ -2,10 +2,10 @@
 default "en") -}} {{- $langContent := index site.Data.rtwt.content $lang -}} {{-
 $content := $langContent.home -}}
 <div class="centered-container">
-  {{- if site.Params.rtwt.home.showAuthorImg -}} <img style="border:
-  var(--dim-color) 1px solid;border-radius:100%;" width="{{- $content.imageWidth
-  -}}" src="{{- $content.image | default "images/profile.jpg" -}}"/> {{- end -}}
-  <h1 class="margin-sm">{{- $content.greetings -}}</h1>
-  <div class="dim" style="width: 70%; margin: 0 15%">{{- $content.text -}}</div>
+    {{- if site.Params.rtwt.home.showAuthorImg -}} <img width="{{- $content.imageWidth -}}"
+                                                        src="{{- $content.image | default " images/profile.jpg" -}}"/>
+    {{- end -}}
+    <h1 class="margin-sm">{{- $content.greetings -}}</h1>
+    <div class="dim" style="width: 70%; margin: 0 15%">{{- $content.text -}}</div>
 </div>
 {{- end -}}
