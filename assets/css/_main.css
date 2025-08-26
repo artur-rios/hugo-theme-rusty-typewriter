@@ -203,7 +203,7 @@ pre:has(code) {
         display: inline;
     }
 
-    .profile-img-none {
-        display: inline;
+    .profile-img-light {
+        display: none;
     }
 }
