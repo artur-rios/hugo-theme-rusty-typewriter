@@ -1,6 +1,6 @@
 {{- define "main" -}}
   {{- .Content -}}
-  {{- partial "home/greetings.html" -}}
+  {{- partial "home/greetings.html" . -}}
 
   {{- $indexablePages := where site.RegularPages "Params.indexable" "ne" false -}}
 

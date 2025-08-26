@@ -1,6 +1,6 @@
 {{- $baseURL := .Site.BaseURL -}}
 
-{{ partial "components/side_content.html" (dict "section" "single") }}
+{{ partial "components/side_content.html" (dict "context" . "section" "single") }}
 
 {{- if site.Params.rtwt.side.single.showDetails -}}
   <div class="side-details">
