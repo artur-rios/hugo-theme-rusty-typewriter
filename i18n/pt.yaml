@@ -32,3 +32,9 @@ details_read_time: minutos de leitura
 side_table_of_contents: Tabela de Conteúdo
 side_attachments: Anexos
 side_related: Relacionados
+
+# Taxonomies Displayed Names
+taxonomies:
+  tags: "palavras-chave"
+  series: "séries"
+  topics: "tópicos"

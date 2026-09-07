@@ -2,13 +2,14 @@
 
 :root {
   --font-family-main: "Bricolage Grotesque", sans-serif;
-  --font-weigth-main: 500;
+  --font-weight-main: 500;
   --font-family-content: "Bricolage Grotesque", serif;
   --font-weight-content: 500;
   --font-family-summary: "Bricolage Grotesque", serif;
   --font-weight-summary: 500;
 
   --dim-color: #88888844;
+  --hover-dim-color: #fff;
 
   --quote-text-color: #888;
   --code-background-color: #333030;

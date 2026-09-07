@@ -1,20 +1,21 @@
-{{- $section := .section -}} {{- $ctx := .context -}} {{- $lang :=
-($ctx.Site.Language.Lang | default "en") -}} {{- $langContent := index
-site.Data.rtwt.content ($lang | default "en") -}} {{- $data := index
-$langContent.side $section -}} {{- if $data }} {{- range $data -}}
-<div class="side-content">
-  <h3>{{- .title -}}</h3>
-  {{- if .imagePath -}} {{- if .imageHref -}}
-  <a href="{{- .imageHref -}}" target="_blank" rel="noopener noreferrer">
-    <img class="side-content-image" src="{{- .imagePath -}}" width="{{- default
-    "80%" .imageWidth -}}" />
-  </a>
-  {{- else -}} <img class="side-content-image" src="{{- .imagePath -}}"
-  width="{{- default "80%" .imageWidth -}}" /> {{- end -}} {{- end -}}
-  <p>{{- markdownify .content -}}</p>
-</div>
-{{- end -}} {{- else }}
-<div class="side-content">
-  <p>No content available for this language.</p>
-</div>
-{{- end -}}
+{{- with .section }}
+  {{- $section := . -}}
+  {{/* Content data may be keyed by language, or flat for single-language sites. */}}
+  {{- $root := hugo.Data.rtwt.content -}}
+  {{- $content := index $root site.Language.Lang | default $root -}}
+  {{- range (index $content.side $section) -}}
+    <div class="side-content">
+      <h3>{{- .title -}}</h3>
+      {{- if .imagePath -}}
+        {{- if .imageHref -}}
+          <a href="{{- .imageHref -}}" target="_blank" rel="noopener noreferrer">
+            <img class="side-content-image" src="{{- .imagePath -}}" width="{{- default "80%" .imageWidth -}}" />
+          </a>
+        {{- else -}}
+          <img class="side-content-image" src="{{- .imagePath -}}" width="{{- default "80%" .imageWidth -}}" />
+        {{- end -}}
+      {{- end -}}
+      <p>{{- markdownify .content -}}</p>
+    </div>
+  {{- end -}}
+{{- end }}
