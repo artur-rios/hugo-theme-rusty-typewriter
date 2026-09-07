@@ -46,5 +46,5 @@ weight = 3
   suffixes = ["json"]
 
 [outputs]
- home = ["HTML","RSS", "SearchIndex"]
+ home = ["HTML","RSS","SearchIndex"]
 # ===================================
