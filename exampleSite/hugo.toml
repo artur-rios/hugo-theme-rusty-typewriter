@@ -2,7 +2,7 @@ title = 'Rusty Typewriter'
 theme = 'rusty-typewriter'
 themesdir = '../..'
 
-languageCode = 'en-US'
+locale = 'en-US'
 enableRobotsTXT = true
 
 # rtwt = Rusty Typewriter Theme
