@@ -14,7 +14,12 @@
       aside.classList.toggle("shown");
       overlay.classList.toggle("shown");
       aside_btn.classList.toggle("hidden");
-      console.log("a");
+    }
+
+    var hide_side_pane = e => {
+      aside.classList.remove("shown");
+      overlay.classList.remove("shown");
+      aside_btn.classList.remove("hidden");
     }
 
     const aside = document.getElementById("side-pane");
@@ -23,6 +28,6 @@
     aside_btn.addEventListener("click", toggle_side_pane);
     overlay.addEventListener("click", toggle_side_pane);
 
-    window.addEventListener("hashchange", toggle_side_pane);
+    window.addEventListener("hashchange", hide_side_pane);
   });
 })();
