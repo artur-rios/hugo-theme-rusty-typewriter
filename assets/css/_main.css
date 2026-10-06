@@ -7,7 +7,7 @@ html[color-scheme^='light'] .light-icon {
 
 html {
   --bgc-transition: background-color 100ms ease-in;
-
+  color-scheme: var(--color-scheme);
   scroll-behavior: smooth;
   ::-moz-selection, ::selection {
     background: var(--selection-color);

@@ -1,6 +1,7 @@
 /* variables in root element */
 
 :root {
+
   --font-family-main: "Bricolage Grotesque", sans-serif;
   --font-weight-main: 500;
   --font-family-content: "Bricolage Grotesque", serif;
@@ -27,6 +28,8 @@
 }
 
 :root[color-scheme^='dark'] {
+  --color-scheme: dark; /* fixes scrollbar color on google chrome */
+
   --body-text-color: #f0efea;
   --body-background-color: #222;
 
