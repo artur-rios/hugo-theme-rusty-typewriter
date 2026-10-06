@@ -26,7 +26,6 @@ body {
   transition: var(--bgc-transition);
 }
 
-
 div#container {
   display: flex;
   flex-direction: column;
@@ -115,6 +114,7 @@ div#aside-overlay {
     bottom: 1.25rem;
     z-index: 4;
     background-color: var(--body-background-color);
+    transition: var(--bgc-transition);
     border: 1px var(--dim-color) solid;
     border-radius: 5px;
   }
