@@ -12,7 +12,7 @@
 
   header#main-header, ol.breadcrumbs, aside#side-pane,
   footer#main-footer, div#aside-overlay,
-  a#aside-toggle-button {
+  a#aside-toggle-button, div.search-bar {
     display: none !important;
   }
 
