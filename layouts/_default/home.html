@@ -4,8 +4,7 @@
 
   {{- $indexablePages := where site.RegularPages "Params.indexable" "ne" false -}}
 
-  <div style="width:95%;margin:0 auto;">
-    <div class="show-md" style="display:none;">
+  <div style="width:95%;margin:0 auto;"> <div class="show-md" style="display:none;">
       {{- partial "search_bar" . -}}
     </div>
 
@@ -22,6 +21,9 @@
 {{- end -}}
 
 {{- define "side" -}}
+  <a id="aside-toggle-button" href="#">
+    {{- partial "svg/aside.svg" -}}
+  </a>
   <aside id="side-pane" class="{{- cond site.Params.rtwt.side.home.sidePaneSticky "side-sticky" "" -}}">
     {{- partial "side/home.html" . -}}
   </aside>

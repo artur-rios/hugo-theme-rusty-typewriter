@@ -204,6 +204,10 @@
   border-radius: 15px;
 }
 
+.search-results {
+    margin-top: 1rem;
+}
+
 .search-result {
   border-top: 1px var(--dim-color) solid;
 }
