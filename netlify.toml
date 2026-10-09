@@ -1,7 +1,7 @@
 [build.environment]
   BASE_PATH = "demo"
-  HUGO_VERSION = "v0.158.0"
-  NODE_VERSION = "22"
+  HUGO_VERSION = "v0.167.0"
+  NODE_VERSION = "24"
   TZ = "America/Sao_Paulo"
 
 [build]
