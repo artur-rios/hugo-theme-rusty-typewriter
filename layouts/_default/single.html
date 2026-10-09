@@ -13,6 +13,9 @@
 {{- end -}}
 
 {{- define "side" -}}
+  <a id="aside-toggle-button" href="#">
+    {{- partial "svg/aside.svg" -}}
+  </a>
   <aside id="side-pane" class="{{- cond site.Params.rtwt.side.single.sidePaneSticky "side-sticky" "" -}}">
     {{- partial "side/single.html" . -}} 
   </aside>
