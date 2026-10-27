@@ -1,5 +1,11 @@
 # Rusty Typewriter
 
+> [!NOTE]
+> This is the real, open-source code of hugo-theme-rusty-typewriter. Its home is Forgejo, at
+> https://git.techcraftsmen.net/artur-rios/hugo-theme-rusty-typewriter; the copy on GitHub is a read-only mirror, for viewing only, and
+> its issues and pull requests are not followed. If you want to contribute, email me at
+> arturdev@duck.com.
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d9fdd7e9-ca88-49c4-9c65-e2532d926840/deploy-status)](https://app.netlify.com/sites/rusty-typewriter/deploys)
 [![Hugo Version](https://img.shields.io/badge/hugo-0.158.0+-blue.svg)](https://github.com/gohugoio/hugo/releases)
 [![License](https://img.shields.io/github/license/math-queiroz/rusty-typewriter)](LICENSE)
